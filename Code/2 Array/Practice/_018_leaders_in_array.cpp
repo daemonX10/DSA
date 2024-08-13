@@ -2,7 +2,14 @@
 using namespace std;
 
 int leader(int arr[],int n){
-    
+    int curr_leader = 0;
+    cout<<"leader are ";
+    for(int i =n;i>0;i--){
+        if(arr[i-1]>curr_leader ){
+            curr_leader = arr[i-1];
+            cout<<curr_leader<<" ";
+        }
+    }
 }
 
 int main(){
